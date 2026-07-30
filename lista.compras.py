@@ -34,10 +34,38 @@ class ListaComprasApp:
             ibl_título.pack(pady=10)
 
 
-            # ========= FRAME PRINCIPAL =========
+            # ========= FRAME DE ENTRADA =========
             frame_entrada = tk.Frame(self.root, bg= "#f0f4f8")
             frame_entrada.pack(pady=10, padx=20, fill= "x")
 
             # Descrição
             tk.Label(frame_entrada, text="descrição:", font=("Arial", 11), bg= "#f0f4f8", fg= "#2c3e50").grid(row=0, column=0, padx=5, pady=5, sticky="e") 
-            self,txt_descricao = tk.Entry(frame_entrada, font=("Arial", 11))
+            self.txt_descricao = tk.Entry(frame_entrada, font=("Arial", 11)), width=30, relief="solid", bd=1 )
+            self.txt_descricao.grild(row=0, column=1, padx=5, pady=5)
+
+            # Quantidade
+            tk.Label(frame_entrada, text="descrição:", font=("Arial", 11), bg= "#f0f4f8", fg= "#2c3e50").grid(row=0, column=0, padx=5, pady=5, sticky="e") 
+            self.txt_descricao = tk.Entry(frame_entrada, font=("Arial", 11)), width=30, relief="solid", bd=1 )
+            self.txt_descricao.grild(row=0, column=1, padx=5, pady=5)
+
+            # Preço
+            tk.Label(frame_entrada, text="descrição:", font=("Arial", 11), bg= "#f0f4f8", fg= "#2c3e50").grid(row=0, column=0, padx=5, pady=5, sticky="e") 
+            self.txt_descricao = tk.Entry(frame_entrada, font=("Arial", 11)), width=30, relief="solid", bd=1 )
+            self.txt_descricao.grild(row=0, column=1, padx=5, pady=5)
+
+            # ============== FRAME DE BOTÕES ==============
+            rame_botoes = tk.frame(self.root, bg"#f0f4f8")
+            rame_botoes.pack(pady=10)
+
+            #Botão inserir 
+            self.btn_inserir = tk.Button(
+                 frame_botoes,
+                 text"➕inserir",
+                 font= ("Arial", 11, "bola"),
+                 bg="#27ae60", fg="white",
+                 width=12, cursor="hand2",
+                 relief="flat",
+                 command=self.inserir
+    )
+            self.btn_inserir.pack9side="left", padx=5)
+            
