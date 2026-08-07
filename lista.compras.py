@@ -16,6 +16,7 @@ class ListaComprasApp:
         self.root.configure(bg="#f0f4f8")
 
         # Dados em memória
+        self.itens = []
         self.item_selecionado = None
         
         self.criar_widgets()
@@ -67,5 +68,21 @@ class ListaComprasApp:
                  relief="flat",
                  command=self.inserir
     )
-            self.btn_inserir.pack9side="left", padx=5)
+            self.btn_inserir.pack(side="left", padx=5)
+            # Botão Editar
+             self.btn_botoes,
+             text"- Editar", 
+            font=("Arial", 11, "bold"),
+            bg="#f39c12, fg= "white",
+            width=12, cursor= "hand2",
+            relief="flat",
+            comand-self.editar
+        )
+        self.btn_editar.pack(side= "left",padx=5)
+
+       # Botão Deletar
+         self.btn_deletar = tk.Button(
+             frame_botões,
+             text"🥤Deletar",
+             font=
             
