@@ -84,5 +84,6 @@ class ListaComprasApp:
          self.btn_deletar = tk.Button(
              frame_botões,
              text"🥤Deletar",
-             font=
+             font=("Arial", 11, "bold"),
+             bg="#e74c3c, fg= "white",
             
